@@ -1,0 +1,7 @@
+{
+  "name": "VolunteerDesk",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
