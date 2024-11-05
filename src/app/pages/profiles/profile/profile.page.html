@@ -1,0 +1,120 @@
+<div class="bigbloc">
+  <div class="head">
+    <i class="fa-solid fa-right-to-bracket" (click)="openLogout()">Logout</i>
+
+    <i class="fa-solid fa-question" id="faq"></i> 
+    <img src="" alt="">
+  </div><br><br>
+
+  <h2>` $this.user.nom ' ' $this.user.prenom `</h2>
+  <span>{{profile?.email }} {{profile?.telephone}}</span>
+
+  <!-- 111111111111111111111111111111111111111111111111111111111111111111111111111 -->
+  <div class="bloc1">
+    <span>
+      <i class="fa-light fa-id-card" ></i>
+      <p (click)="openEditProfile()" id="faq">Modifier les information du profile</p>
+    </span>
+
+    <div>
+      <span>
+        <i class="fa-regular fa-bell" id="faq"></i>
+        <span (click)="openNotification()">Notification</span>
+      </span>
+      <p>Oui</p>
+    </div>
+    <div>
+      <span>
+        <i class="fa-solid fa-question" id="faq"></i>
+        <span>Langue </span>
+      </span>
+      <p>Français</p>
+    </div>
+
+  </div>
+
+  <!-- 222222222222222222222222222222222222222222222222222222222222222222222222222222 -->
+  
+  <div class="bloc1">
+    
+    <span>
+      <i class="fa-light fa-id-card" ></i>
+      <p (click)="openSecurity()" id="faq">Securites</p>
+    </span>
+
+    <span>
+      <i class="fa-light fa-id-card" ></i>
+      <p (click)="openTheme()" id="faq">Themes</p>
+    </span>
+
+    <span>
+      <i class="fa-light fa-id-card" ></i>
+      <p (click)="openEvents()" id="faq">Mes Evenements</p>
+    </span>
+
+    
+
+  </div>
+
+  <!-- 3333333333333333333333333333333333333333333333333333333333333333333 -->
+
+  <div class="bloc1">
+    <span>
+      <i class="fa-solid fa-question" (click)="openHelp()" id="faq"></i>
+      <p>Aide et Support</p>
+    </span>
+    <span>
+      <i class="fa-solid fa-question" id="faq"></i>
+      <p (click)="openContact()">Contactez-Nous</p>
+    </span>
+    <span>
+      <i class="fa-thin fa-lock" id="faq"></i>
+      <p (click)="openPrivacy()" >Politique de Confidentialité</p>
+    </span>
+
+  </div>
+
+</div>
+
+
+
+<!-- <ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Profile</ion-title>
+      <div class="up">
+        <span class="haut">
+
+
+
+    
+        </span>
+
+        
+        
+      </div>
+
+      <div class="down">
+        <div class="first_part">
+          <i class="fa-light fa-id-card" (click)="openEditProfile()">Modifier les informations de profile</i>
+          <i class="fa-regular fa-bell" (click)="openNotification()">Notification</i>
+          <i class="fa-regular fa-language" (click)="openLangue()">Langue</i>
+        </div>
+
+        <div class="second_part">
+          <ion-button (click)="openSecurity()">Securtites</ion-button>
+          <ion-button (click)="openTheme()">Themes</ion-button>
+          <ion-button (click)="openEvents()">Mes Evenements</ion-button>
+        </div>
+
+        <div class="third_part">
+          <ion-button (click)="openHelp()">Aide et Support</ion-button>
+          <ion-button (click)="openContact()">Contactez-Nous</ion-button>
+          <i class="fa-thin fa-lock" (click)="openPrivacy()">Politique de Confidentialité</i>
+        </div>
+        
+        
+      </div>
+    </ion-toolbar>
+  </ion-header>
+</ion-content> -->

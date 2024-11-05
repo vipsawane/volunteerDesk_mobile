@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Ressources</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-list class="card">
+    <ion-item *ngFor="let ressource of ressource">
+      <ion-label>{{ ressource.libelleRessource }}</ion-label>
+      <ion-label>{{ ressource.contenuRessource }}</ion-label>
+
+      <ion-buttons slot="end">
+        <ion-button>
+          <ion-icon slot="icon-only" name="heart"></ion-icon>
+          Aimer
+        </ion-button>
+        <ion-button>
+          <ion-icon slot="icon-only" name="chatbubbles"></ion-icon>
+          Commentaires
+        </ion-button>
+      </ion-buttons>
+    </ion-item>
+  </ion-list> 
+</ion-content>

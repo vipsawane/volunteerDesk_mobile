@@ -1,0 +1,68 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar class="wrapper">
+    <ion-item lines="none">
+      <ion-label color="light">
+        <div>
+          <ion-icon name="locate-outline"></ion-icon>
+          <ion-text>Events near me</ion-text>
+        </div>
+        <p>Bamako, Mali</p>
+      </ion-label>
+
+      <ion-fab-button size="small">
+        <ion-icon name="notifications-outline" color="medium"></ion-icon>
+        <ion-badge>&#9679;</ion-badge>
+      </ion-fab-button>
+    </ion-item>
+
+    <ion-toolbar class="srchBar" mode="ios">
+      <ion-row>
+        <ion-col size="10">
+          <ion-searchbar placeholder="Search events"></ion-searchbar>
+        </ion-col>
+        <ion-col size="2">
+          <ion-fab-button size="small" color="light">
+            <ion-icon name="options-outline" color="medium"></ion-icon>
+          </ion-fab-button>
+        </ion-col>
+      </ion-row>
+    </ion-toolbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-list-header>
+      <ion-title>Liste des événements</ion-title>
+    </ion-list-header>
+    <ion-item *ngFor="let evenement of evenements">
+      <ion-card>
+        <ion-label>
+          <h2>Libellé: {{ evenement.libelle }}</h2>
+          <p>Description: {{ evenement.description }}</p>
+          <p>Type d'événement: {{ evenement.typeEvenement }}</p>
+          <!-- <p>Organisateur: {{ evenement.organisateur }}</p>
+          <p>Lieu: {{ evenement.lieuEvenement }}</p>
+          <p>Date: {{ evenement.dateDebutEvenement | date }} - {{ evenement.dateFinEvenement | date }}</p> -->
+        </ion-label>
+        <ion-buttons slot="end">
+          <ion-button>
+            <ion-icon slot="icon-only" name="heart"></ion-icon>
+            Aimer
+          </ion-button>
+          <ion-button>
+            <ion-icon slot="icon-only" name="chatbubbles"></ion-icon>
+            Commentaires
+          </ion-button>
+          <p>Voir Details</p>
+          <ion-button>Postuler</ion-button>
+
+        </ion-buttons>
+      </ion-card>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+<ion-footer>
+  <menu></menu>
+</ion-footer>
